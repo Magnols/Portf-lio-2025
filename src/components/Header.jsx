@@ -1,5 +1,9 @@
 // src/components/Header.jsx
 
+import './Header.css'; // <<-- ADICIONE ESTA LINHA
+
+// src/components/Header.jsx
+
 function Header() {
   return (
     <header>

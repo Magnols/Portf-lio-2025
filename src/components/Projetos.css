@@ -1,0 +1,20 @@
+/* src/components/Projetos.css */
+
+.projetos-secao {
+  padding: 40px;
+  background-color: #fff; /* Fundo branco para esta seção */
+}
+
+.projetos-secao h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+}
+
+.projetos-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo */
+  gap: 20px; /* Espaço entre os cards */
+}

@@ -1,0 +1,32 @@
+/* src/components/Header.css */
+
+/* Estilo para o container do cabeçalho */
+header {
+  background-color: #282c34; /* Um cinza escuro, cor comum em sites de dev */
+  padding: 20px 40px; /* Espaçamento interno: 20px em cima/baixo, 40px nas laterais */
+  display: flex; /* Alinha os itens lado a lado */
+  justify-content: space-between; /* Coloca um item em cada ponta (nome na esquerda, links na direita) */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Uma sombra sutil para dar profundidade */
+  color: white; /* Cor do texto */
+}
+
+/* Estilo para o seu nome/título */
+header h1 {
+  margin: 0; /* Remove a margem padrão do h1 */
+  font-size: 1.8em; /* Tamanho da fonte */
+}
+
+/* Estilo para os links de navegação */
+header nav a {
+  color: #61dafb; /* Um azul claro, a cor do React */
+  margin-left: 20px; /* Espaçamento entre os links */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  font-size: 1.1em;
+  transition: color 0.3s ease; /* Efeito suave na mudança de cor */
+}
+
+/* Efeito quando o mouse passa por cima do link */
+header nav a:hover {
+  color: white; /* Muda a cor do link para branco */
+}
