@@ -7,7 +7,7 @@ import './Header.css'; // <<-- ADICIONE ESTA LINHA
 function Header() {
   return (
     <header>
-      <h1>Magno [Seu Sobrenome]</h1>
+      <h1>Magno Silva</h1>
       <nav>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>

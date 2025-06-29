@@ -1,0 +1,39 @@
+/* src/components/Contato.css */
+.contato-secao {
+  background-color: #282c34; /* Fundo escuro para contrastar */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contato-secao h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.contato-secao p {
+  max-width: 600px;
+  margin: 0 auto 30px; /* Centraliza o parágrafo */
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.contato-secao ul {
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+}
+
+.contato-secao li {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.contato-secao a {
+  color: #61dafb; /* Cor de destaque do React */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contato-secao a:hover {
+  color: white;
+}
