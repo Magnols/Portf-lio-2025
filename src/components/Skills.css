@@ -1,0 +1,57 @@
+/* src/components/Skills.css */
+
+.skills-secao {
+  padding: 50px 20px;
+  background-color: #1a1a1a; /* Fundo bem escuro */
+  text-align: center;
+}
+
+.skills-secao h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-transform: uppercase; /* Deixa o título em maiúsculas */
+  letter-spacing: 3px; /* Espaçamento entre as letras */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Grid responsivo */
+  gap: 30px; /* Espaço entre os cards */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #252525;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.skill-card i {
+  font-size: 4rem; /* Tamanho grande para o ícone */
+  margin-bottom: 15px;
+}
+
+/* O ícone do Next.js é preto, então forçamos a cor branca para o texto */
+.devicon-nextjs-original-wordmark {
+  color: white;
+}
+
+.skill-card p {
+  color: #ccc;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* O EFEITO FUTURISTA ACONTECE AQUI */
+.skill-card:hover {
+  transform: translateY(-10px); /* Efeito de flutuar para cima */
+  box-shadow: 0 10px 25px rgba(0, 219, 255, 0.3); /* Efeito de brilho (glow) azul */
+}

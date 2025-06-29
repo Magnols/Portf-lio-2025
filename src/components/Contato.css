@@ -1,39 +1,101 @@
 /* src/components/Contato.css */
 .contato-secao {
-  background-color: #282c34; /* Fundo escuro para contrastar */
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
+  background-color: #f4f4f4; /* Fundo claro para esta seção */
+  color: #333;
+  padding: 60px 20px;
 }
 
 .contato-secao h2 {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 40px;
   font-size: 2em;
 }
 
-.contato-secao p {
-  max-width: 600px;
-  margin: 0 auto 30px; /* Centraliza o parágrafo */
-  font-size: 1.1em;
-  line-height: 1.6;
+.contato-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px; /* Espaço entre as colunas */
+  flex-wrap: wrap; /* Permite que quebre em telas menores */
 }
 
-.contato-secao ul {
-  list-style: none; /* Remove as bolinhas da lista */
+.contato-info, .contato-form {
+  flex: 1; /* Faz com que as duas colunas dividam o espaço */
+  min-width: 300px; /* Largura mínima antes de quebrar a linha */
+}
+
+.contato-info h3, .contato-form h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #0070f3; /* Destaque azul */
+}
+
+.contato-info p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contato-info ul {
+  list-style: none;
   padding: 0;
 }
 
-.contato-secao li {
+.contato-info li {
   margin-bottom: 15px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
-.contato-secao a {
-  color: #61dafb; /* Cor de destaque do React */
+.contato-info a {
+  color: #1a1a1a;
   text-decoration: none;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.contato-secao a:hover {
+.contato-info a:hover {
+  color: #0070f3;
+}
+
+/* Estilos do Formulário */
+.form-grupo {
+  margin-bottom: 20px;
+}
+
+.form-grupo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-grupo input, .form-grupo textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-grupo input:focus, .form-grupo textarea:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+}
+
+.botao-enviar {
+  background: #282c34;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-enviar:hover {
+  background-color: #0070f3;
+  transform: translateY(-2px);
 }

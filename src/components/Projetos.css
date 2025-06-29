@@ -18,3 +18,27 @@
   flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo */
   gap: 20px; /* Espaço entre os cards */
 }
+
+/* Estilo do Botão "Mostrar Mais" --- Adicionar ao final de Projetos.css */
+
+.botao-mostrar-mais {
+  background: linear-gradient(90deg, #0070f3, #00dbff); /* Gradiente azul futurista */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Bem arredondado */
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 40px; /* Espaço acima do botão */
+  display: block; /* Para poder centralizar com margin */
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 219, 255, 0.4);
+}
+
+.botao-mostrar-mais:hover {
+  transform: scale(1.05); /* Aumenta um pouco de tamanho */
+  box-shadow: 0 8px 25px rgba(0, 219, 255, 0.6); /* Aumenta o brilho */
+}

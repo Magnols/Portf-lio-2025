@@ -1,0 +1,63 @@
+/* src/components/Sobre.css */
+
+.sobre-secao {
+  padding: 40px 15%; /* Usamos % para o espaçamento lateral se adaptar a telas diferentes */
+  background-color: #f4f4f4; /* Um cinza bem claro para destacar a seção */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.sobre-secao h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.sobre-secao p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.7; /* Aumenta o espaço entre as linhas para melhor leitura */
+  margin-bottom: 20px; /* Espaço entre os parágrafos */
+  text-indent: 40px; /* <<<--- AQUI ESTÁ O COMANDO! Recuo de 40 pixels na primeira linha. */
+  text-align: justify; /* Justifica o texto para um alinhamento mais formal */
+}
+
+/* Estilos para o Destaque e Tooltip */
+
+.destaque-tooltip {
+  color: #0070f3; /* Uma cor de destaque, pode ser a que preferir */
+  font-weight: bold;
+  border-bottom: 2px dotted #0070f3; /* Um sublinhado pontilhado para indicar interatividade */
+  position: relative; /* Essencial para o tooltip funcionar */
+  cursor: help; /* Muda o cursor do mouse para indicar que há uma ajuda */
+}
+
+/* O balão do tooltip (escondido por padrão) */
+.destaque-tooltip::after {
+  content: attr(data-tooltip); /* Pega o texto do atributo 'data-tooltip' */
+  position: absolute;
+  bottom: 125%; /* Posiciona o balão acima da palavra */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o balão */
+
+  background-color: #333; /* Fundo escuro */
+  color: white; /* Texto branco */
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: normal;
+  text-align: center;
+  text-indent: 0; /* Remove a indentação dentro do tooltip */
+  white-space: nowrap; /* Impede que o texto do balão quebre a linha */
+
+  opacity: 0; /* Começa invisível */
+  visibility: hidden; /* Começa escondido */
+  transition: opacity 0.3s ease; /* Efeito de fade suave */
+}
+
+/* Mostra o tooltip quando o mouse passa por cima */
+.destaque-tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
